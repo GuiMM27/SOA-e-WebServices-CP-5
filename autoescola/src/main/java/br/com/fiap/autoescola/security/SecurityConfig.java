@@ -22,7 +22,17 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
+                // Libera rotas do Swagger / OpenAPI
+                .requestMatchers(
+                    "/v3/api-docs/**",
+                    "/swagger-ui/**",
+                    "/swagger-ui.html"
+                ).permitAll()
+                
+                // Restringe rotas de usuarios para ADMIN
                 .requestMatchers("/usuarios/**").hasRole("ADMIN")
+                
+                // Demais requisicoes
                 .anyRequest().permitAll() // Ajuste conforme for integrando o JWT
             );
         return http.build();
