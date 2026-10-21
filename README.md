@@ -8,7 +8,7 @@ API desenvolvida em Java para o gerenciamento, agendamento de instruções, cont
 
 *   **Guilherme Machado Moreira** – RM557290 – 3ESPV
 *   **Enzo Almeida Santos Ramos** – RM556900 – 3ESPV
-*   **Gabriel de Mello Silva Fernandes** – RM5544213 – 3ESPV
+*   **Gabriel de Mello Silva Fernandes** – RM554421 – 3ESPV
 
 ---
 
